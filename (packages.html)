@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Tour Packages | Kolkata With Sam</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader"><div class="loader-spinner"></div></div>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-title">KOLKATA WITH SAM</span>
+                <span class="brand-subtitle">Your Trusted Local Friend</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="packages.html" class="nav-link active">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn"></button>
+                <button class="mobile-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top:140px;">
+        <section class="container section-padding">
+            <div style="text-align: center; margin-bottom: 80px;">
+                <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); font-weight: 600;">Transparent Lux Pricing</span>
+                <h1 style="font-size: 3rem; margin-top: 10px;">Select Your Experience</h1>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <!-- Package 1 -->
+                <div class="glass-panel animate-on-scroll" style="padding: 40px; border-radius: var(--radius-md); text-align: center; position: relative; border-top: 4px solid var(--accent);">
+                    <h3>Half-Day Immersive</h3>
+                    <p style="color: var(--text-muted); margin: 15px 0 25px 0;">Ideal for business travelers with quick windows.</p>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 25px;">$75 <span style="font-size: 1rem; color: var(--text-muted);">/ 4 Hours</span></div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 35px; text-align: left; font-size: 0.9rem;">
+                        <li>✓ Private Chauffeur Options</li>
+                        <li>✓ Flexible Structural Routing</li>
+                        <li>✓ 1 Key Heritage Monument Entry</li>
+                    </ul>
+                    <a href="contact.html" class="btn-premium btn-outline" style="width: 100%;">Book This</a>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="glass-panel animate-on-scroll" style="padding: 40px; border-radius: var(--radius-md); text-align: center; position: relative; border-top: 4px solid var(--primary); background: rgba(10,37,64,0.02);">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #0A2540; padding: 4px 14px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-radius: 20px;">Highly Vetted</div>
+                    <h3>Full-Day Explorer</h3>
+                    <p style="color: var(--text-muted); margin: 15px 0 25px 0;">Complete, deep multi-layered dive into the city.</p>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 25px;">$130 <span style="font-size: 1rem; color: var(--text-muted);">/ 8 Hours</span></div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 35px; text-align: left; font-size: 0.9rem;">
+                        <li>✓ Comprehensive Coverage Matrix</li>
+                        <li>✓ VIP Colonial Lunch Booking</li>
+                        <li>✓ All-Inclusive Entry Cleared</li>
+                    </ul>
+                    <a href="contact.html" class="btn-premium btn-gold" style="width: 100%;">Book This</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="glass-panel animate-on-scroll" style="padding: 40px; border-radius: var(--radius-md); text-align: center; position: relative; border-top: 4px solid var(--accent);">
+                    <h3>Bespoke Custom Curation</h3>
+                    <p style="color: var(--text-muted); margin: 15px 0 25px 0;">100% elastic itinerary mapped to specifications.</p>
+                    <div style="font-size: 2.2rem; font-weight: 700; color: var(--primary); margin-bottom: 25px;">Bespoke <span style="font-size: 0.9rem; color: var(--text-muted);">/ Custom</span></div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 35px; text-align: left; font-size: 0.9rem;">
+                        <li>✓ Endless Multi-Day Interlocks</li>
+                        <li>✓ Diplomatic Protocol Guarding</li>
+                        <li>✓ Dedicated 24/7 Remote Wire</li>
+                    </ul>
+                    <a href="contact.html" class="btn-premium btn-outline" style="width: 100%;">Consult Sam</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container" style="text-align: center; font-size: 0.8rem; color: #86868B;">
+            <p>&copy; 2026 Kolkata With Sam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
