@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shivam Kumar | Premium Local Guide Profile</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader"><div class="loader-spinner"></div></div>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-title">KOLKATA WITH SAM</span>
+                <span class="brand-subtitle">Your Trusted Local Friend</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn"></button>
+                <button class="mobile-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top:140px;">
+        <section class="container section-padding" style="display:grid; grid-template-columns: 1fr 1.2fr; gap:60px; align-items:center;">
+            <div>
+                <div style="border: 2px solid var(--accent); padding:15px; border-radius:var(--radius-md);">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600" alt="Shivam Kumar - Founder of Kolkata With Sam Travel Concierge" style="width:100%; border-radius:var(--radius-sm); object-fit:cover; filter:grayscale(20%);">
+                </div>
+            </div>
+            <div class="animate-on-scroll">
+                <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:3px; color:var(--accent); font-weight:600;">Founding Curation Identity</span>
+                <h1 style="font-size:3rem; margin-top:10px;">Meet Shivam Kumar</h1>
+                <p style="font-weight:600; color:var(--secondary); margin-bottom:20px;">Professional English-Speaking Local Travel Specialist | 20 Years Old Local Native Resident</p>
+                <p style="color:var(--text-muted); margin-bottom:20px; font-size:1.05rem;">Operating out of the heart of Kolkata, I serve discerning international business travelers, diplomats, and vacationers seeking an authentic window into India's cultural capital.</p>
+                <p style="color:var(--text-muted); margin-bottom:30px; font-size:1.05rem;">My methodology eliminates transactional guide behaviors, focusing instead on serving as a highly reliable, knowledgeable local friend who ensures your safety, efficiency, and cultural immersion.</p>
+                
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                    <div class="glass-panel" style="padding:20px; border-radius:var(--radius-sm);">
+                        <h4 style="color:var(--accent); font-size:1.5rem; font-family:var(--font-sans);">100%</h4>
+                        <p style="font-size:0.8rem; text-transform:uppercase; color:var(--text-main);">Vetted Safety Index</p>
+                    </div>
+                    <div class="glass-panel" style="padding:20px; border-radius:var(--radius-sm);">
+                        <h4 style="color:var(--accent); font-size:1.5rem; font-family:var(--font-sans);">Fluent</h4>
+                        <p style="font-size:0.8rem; text-transform:uppercase; color:var(--text-main);">English & Local Dialects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="footer-heading" style="color: #FFFFFF;">Kolkata With Sam</h3>
+                <p style="font-size: 0.9rem; color: #86868B; max-width: 280px; margin-top: 15px;">Your high-end luxury private companion orchestrating safety, authenticity, and memories across West Bengal, India.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Bespoke Operations</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                    <li><a href="services.html">VIP Airport Protocol</a></li>
+                    <li><a href="packages.html">Heritage Expeditions</a></li>
+                    <li><a href="services.html">Bespoke Gastronomy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Legal Integrity</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                    <li><a href="privacy.html">Privacy Protection Policy</a></li>
+                    <li><a href="terms.html">Terms of Engagement</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Node</h4>
+                <p style="font-size: 0.9rem; color: #86868B;">E: shivamkumarsaha90@gmail.com</p>
+                <p style="font-size: 0.9rem; color: #86868B; margin-top: 5px;">M: +91 6204576957</p>
+            </div>
+        </div>
+        <div class="container" style="border-top: 1px solid #2C354D; padding-top: 30px; text-align: center; font-size: 0.8rem; color: #86868B;">
+            <p>&copy; 2026 Kolkata With Sam. Crafted to Perfection. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
