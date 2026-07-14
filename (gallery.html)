@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Curation Showcase | Kolkata With Sam</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .gallery-filter-btn { padding: 8px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-main); cursor: pointer; font-weight: 500; transition: var(--transition-smooth); }
+        .gallery-filter-btn.active, .gallery-filter-btn:hover { background: var(--primary); color: var(--bg-surface); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 40px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 4px 15px rgba(0,0,0,0.05); cursor: pointer; }
+        .gallery-item img { width: 100%; height: 280px; object-fit: cover; transition: var(--transition-smooth); }
+        .gallery-item:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div id="preloader"><div class="loader-spinner"></div></div>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-title">KOLKATA WITH SAM</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions"><button class="theme-toggle-btn"></button></div>
+        </div>
+    </header>
+
+    <main style="padding-top:140px;">
+        <section class="container section-padding">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h1 style="font-size: 3rem;">Snapshots of Authenticity</h1>
+                <p style="color:var(--text-muted);">A view through the lens of private architectural and localized city paths.</p>
+            </div>
+
+            <!-- Filter Switches Row -->
+            <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+                <button class="gallery-filter-btn active" onclick="filterGallery('all')">All Images</button>
+                <button class="gallery-filter-btn" onclick="filterGallery('heritage')">Heritage</button>
+                <button class="gallery-filter-btn" onclick="filterGallery('culture')">Culture</button>
+            </div>
+
+            <!-- Image Grid Nodes -->
+            <div class="gallery-grid">
+                <div class="gallery-item heritage animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=500" alt="Victoria Memorial Kolkata Curation">
+                </div>
+                <div class="gallery-item culture animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1605007493699-af65834f8a00?q=80&w=500" alt="Local Culture Curation Track">
+                </div>
+                <div class="gallery-item heritage animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=500" alt="Historic Street Car Tracks">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            items.forEach(item => {
+                if(category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
