@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolkata With Sam | Your Premium Local Travel Concierge Friend</title>
+    
+    <meta name="description" content="Experience the cultural capital of India with Sam (Shivam Kumar). Luxury bespoke private tours, immersive food walks, and VIP airport concierge services in Kolkata.">
+    <meta name="keywords" content="Kolkata Tour Guide, Premium Tour Kolkata, Private Travel Concierge India, Food Walk Kolkata, Shivam Kumar, Kolkata With Sam">
+    <meta name="author" content="Shivam Kumar">
+    
+    <meta property="og:title" content="Bespoke Kolkata Private Experiences | Kolkata With Sam">
+    <meta property="og:description" content="Unlock hidden architectural gems, high-end culinary walks, and authentic encounters under premium local guidance.">
+    <meta property="og:image" content="images/og-main-display.jpg">
+    <meta property="og:url" content="https://kolkatawithsam.com">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kolkata With Sam | Premium Local Assistant">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Kolkata With Sam",
+      "image": "images/og-main-display.jpg",
+      "@id": "https://kolkatawithsam.com/#agency",
+      "url": "https://kolkatawithsam.com",
+      "telephone": "+916204576957",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Salt Lake Sector V",
+        "addressLocality": "Kolkata",
+        "addressRegion": "West Bengal",
+        "postalCode": "700091",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.5726,
+        "longitude": 88.3639
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <div id="preloader" role="status" aria-label="Loading Premium Assets">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo" aria-label="Kolkata With Sam Home">
+                <span class="brand-title">KOLKATA WITH SAM</span>
+                <span class="brand-subtitle">Your Trusted Local Friend</span>
+            </a>
+            
+            <nav aria-label="Primary Platform Direct Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" aria-label="Toggle Interface Contrast Mode"></button>
+                <a href="javascript:void(0)" onclick="toggleModal('bookingModal', 'open')" class="btn-premium btn-outline" style="padding: 8px 16px; font-size: 0.8rem;">Book Experience</a>
+                <button class="mobile-toggle" aria-label="Expand Navigation Layer" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" style="position: relative; height: 100vh; background: linear-gradient(rgba(10,37,64,0.4), rgba(10,37,64,0.75)), url('https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=1920') no-repeat center center/cover; display: flex; align-items: center; color: #FFFFFF;">
+            <div class="container animate-on-scroll" style="z-index: 2; max-width: 850px;">
+                <h1 style="color: #FFFFFF; font-size: 4rem; margin-bottom: 20px;">Discover Kolkata Not As A Tourist, But As A Friend.</h1>
+                <p style="font-size: 1.25rem; font-family: var(--font-sans); font-weight: 400; color: #FAFAFA; margin-bottom: 40px; max-width: 650px;">Immersive customized private local tours, luxury hospitality logistics management, and bespoke heritage curation paths engineered for discerning international visitors.</p>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <a href="javascript:void(0)" onclick="toggleModal('bookingModal', 'open')" class="btn-premium btn-gold">Initiate Curation</a>
+                    <a href="https://api.whatsapp.com/send?phone=916204576957&text=Hello%20Sam,%20I%20am%20planning%20a%20trip%20to%20Kolkata." target="_blank" class="btn-premium btn-outline" style="color: #FFFFFF; border-color: #FFFFFF;">Chat Live Now</a>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="section-padding container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); font-weight: 600;">Elite Offerings Matrix</span>
+                <h2 style="font-size: 2.5rem; margin-top: 10px;">Tailored Concierge Layouts</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <div class="glass-panel animate-on-scroll" style="padding: 40px; border-radius: var(--radius-md); transition: var(--transition-smooth);">
+                    <h3 style="margin-bottom: 15px;">VIP Airport Assistance</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Seamless fast-track arrivals, high-end private terminal transfers, baggage reconciliation, and language translation nodes.</p>
+                </div>
+                <div class="glass-panel animate-on-scroll" style="padding: 40px; border-radius: var(--radius-md); transition: var(--transition-smooth);">
+                    <h3 style="margin-bottom: 15px;">Private Heritage Walks</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Exclusive curated insights covering Colonial architectural masterpieces and historic elite family mansions.</p>
+                </div>
+                <div class="glass-panel animate-on-scroll" style="padding: 40px; border-radius: var(--radius-md); transition: var(--transition-smooth);">
+                    <h3 style="margin-bottom: 15px;">Fine Culinary Curation</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Bespoke pathways highlighting hygienic global street food elements up to 5-star colonial dining rooms.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="footer-heading" style="color: #FFFFFF;">Kolkata With Sam</h3>
+                <p style="font-size: 0.9rem; color: #86868B; max-width: 280px; margin-top: 15px;">Your high-end luxury private companion orchestrating safety, authenticity, and memories across West Bengal, India.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Bespoke Operations</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                    <li><a href="services.html">VIP Airport Protocol</a></li>
+                    <li><a href="packages.html">Heritage Expeditions</a></li>
+                    <li><a href="services.html">Bespoke Gastronomy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Legal Integrity</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                    <li><a href="privacy.html">Privacy Protection Policy</a></li>
+                    <li><a href="terms.html">Terms of Engagement</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Node</h4>
+                <p style="font-size: 0.9rem; color: #86868B;">E: shivamkumarsaha90@gmail.com</p>
+                <p style="font-size: 0.9rem; color: #86868B; margin-top: 5px;">M: +91 6204576957</p>
+            </div>
+        </div>
+        <div class="container" style="border-top: 1px solid #2C354D; padding-top: 30px; text-align: center; font-size: 0.8rem; color: #86868B;">
+            <p>&copy; 2026 Kolkata With Sam. Crafted to Perfection. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="floating-widget-container">
+        <a href="https://api.whatsapp.com/send?phone=916204576957&text=Hello%20Sam" class="float-btn btn-whatsapp" target="_blank" aria-label="Direct Signal WhatsApp Concierge"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.849-9.844.002-2.63-1.023-5.101-2.885-6.964C17.16 1.932 14.68 .907 12.049.907c-5.43 0-9.849 4.413-9.853 9.843-.002 1.96.512 3.878 1.492 5.61l-.995 3.633 3.732-.979zm12.396-5.64c-.331-.166-1.961-.966-2.264-1.076-.303-.11-.524-.165-.744.165-.22.33-.852 1.076-1.044 1.296-.192.22-.384.247-.715.082-1.704-.855-2.778-1.549-3.886-3.447-.293-.501.293-.464.839-1.55.093-.184.047-.344-.023-.48-.071-.138-.632-1.523-.867-2.09-.228-.55-.46-.474-.632-.483-.164-.008-.352-.01-.54-.01-.188 0-.494.07-.753.356-.259.287-.988.966-.988 2.356 0 1.39 1.012 2.73 1.153 2.92.141.19 1.992 3.041 4.827 4.26.674.29 1.2.463 1.61.592.678.215 1.295.185 1.783.112.544-.08 1.637-.67 1.868-1.316.23-.647.23-1.2.161-1.316-.069-.115-.259-.182-.591-.349z"/></svg></a>
+        <button class="float-btn btn-back-top" aria-label="Return to top structural matrix viewport"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+    </div>
+
+    <div id="bookingModal" class="modal-overlay" aria-hidden="true" role="dialog">
+        <div class="modal-content-wrapper glass-panel">
+            <button class="modal-close-trigger" onclick="toggleModal('bookingModal', 'close')" aria-label="Close interface overlay">&times;</button>
+            <h2 style="font-size: 2rem; margin-bottom: 5px;">Secure Bespoke Curation</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 25px;">Provide travel matrices below to configure local logistics clearance.</p>
+            
+            <form id="mainBookingForm" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="grid-column: span 2;">
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Full Identification Name *</label>
+                    <input type="text" id="bk_name" required style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm);">
+                </div>
+                <div>
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Secure Email Hub *</label>
+                    <input type="email" id="bk_email" required style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm);">
+                </div>
+                <div>
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Mobile Contact Channel</label>
+                    <input type="tel" id="bk_phone" style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm);">
+                </div>
+                <div>
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Service Archetype Designation</label>
+                    <select id="bk_service" style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm);">
+                        <option value="VIP Airport Assistance">VIP Airport Assistance</option>
+                        <option value="Private Heritage City Tour">Private Heritage City Tour</option>
+                        <option value="Immersive Gastronomic Walk">Immersive Gastronomic Walk</option>
+                        <option value="Custom Bespoke Itinerary Plan">Custom Bespoke Itinerary Plan</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Target Calendar Date *</label>
+                    <input type="date" id="bk_date" required style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm);">
+                </div>
+                <div style="grid-column: span 2;">
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Total Group Member Count</label>
+                    <input type="number" id="bk_pax" min="1" max="50" value="1" style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm);">
+                </div>
+                <div style="grid-column: span 2;">
+                    <label style="display:block; font-size:0.8rem; font-weight:600; text-transform:uppercase; margin-bottom:5px;">Bespoke Requests Vector</label>
+                    <textarea id="bk_requests" rows="3" style="width:100%; padding:12px; background:var(--bg-main); border:1px solid var(--border-color); color:var(--text-main); border-radius:var(--radius-sm); font-family:var(--font-sans);"></textarea>
+                </div>
+                <div style="grid-column: span 2; margin-top:10px;">
+                    <button type="submit" class="btn-premium btn-gold" style="width:100%;">Transmit Manifest Securely</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="cookieBanner" class="cookie-banner glass-panel">
+        <h4 style="margin-bottom: 8px; font-size:1.1rem;">Privacy Data Optimization Transparency</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">We apply localized cookie tokens to improve premium responsiveness across navigation tracks.</p>
+        <button id="acceptCookies" class="btn-premium btn-gold" style="padding:8px 16px; font-size:0.75rem;">Authorize Metrics</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
+
