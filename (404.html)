@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8"><title>Route Not Found | Kolkata With Sam</title>
+    <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/components.css">
+</head>
+<body style="height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <main class="glass-panel" style="padding: 60px; border-radius: var(--radius-lg); max-width: 500px;">
+        <h1 style="font-size: 5rem; color: var(--accent);">404</h1>
+        <h2 style="margin: 20px 0;">Destination Displaced</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">The specific logistical route you are looking for does not exist or has been shifted to a new coordinate.</p>
+        <a href="index.html" class="btn-premium btn-gold">Return to Safe Harbor</a>
+    </main>
+</body>
+</html>
