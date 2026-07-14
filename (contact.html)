@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support Engine | Kolkata With Sam</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .faq-accordion-item { border-bottom: 1px solid var(--border-color); padding: 18px 0; }
+        .faq-trigger { width: 100%; text-align: left; background: transparent; border: none; font-family: var(--font-serif); font-size: 1.15rem; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-body { display: none; padding-top: 12px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+        .faq-body.active { display: block; }
+    </style>
+</head>
+<body>
+    <div id="preloader"><div class="loader-spinner"></div></div>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo"><span class="brand-title">KOLKATA WITH SAM</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions"><button class="theme-toggle-btn"></button></div>
+        </div>
+    </header>
+
+    <main style="padding-top:140px;">
+        <!-- Dual Configuration Grid -->
+        <section class="container section-padding" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+            <div>
+                <span style="color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem;">Direct Secure Terminal</span>
+                <h1 style="font-size: 2.8rem; margin: 10px 0 20px 0;">Reach Out to Sam</h1>
+                <p style="color: var(--text-muted); margin-bottom: 40px;">Have questions about safety protocols, high-end vehicle rentals, or seasonal timing windows? Send a direct dispatch down below.</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 20px; font-size: 1rem;">
+                    <p><strong>Secure Inbox:</strong> shivamkumarsaha90@gmail.com</p>
+                    <p><strong>Hotline Signal:</strong> +91 6204576957</p>
+                    <p><strong>Operational Base:</strong> Salt Lake Sector V, Kolkata, West Bengal, India</p>
+                </div>
+            </div>
+
+            <!-- Interceptive Contact Form Sheet -->
+            <div class="glass-panel" style="padding: 40px; border-radius: var(--radius-md);">
+                <form id="directContactForm" onsubmit="executeDirectContact(event)">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Client Name</label>
+                        <input type="text" id="c_name" required style="width: 100%; padding: 12px; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main); border-radius: var(--radius-sm);">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Communication Channel (Email)</label>
+                        <input type="email" id="c_email" required style="width: 100%; padding: 12px; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main); border-radius: var(--radius-sm);">
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Message Spec Vector</label>
+                        <textarea id="c_msg" rows="4" required style="width: 100%; padding: 12px; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main); border-radius: var(--radius-sm); font-family: var(--font-sans);"></textarea>
+                    </div>
+                    <button type="submit" class="btn-premium btn-gold" style="width: 100%;">Transmit Message Wire</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Extensive 20-Point FAQ Section Container -->
+        <section class="container section-padding" style="border-top: 1px solid var(--border-color);">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem;">Frequently Answered Operations</h2>
+                <p style="color: var(--text-muted);">Addressing critical structural details for international travelers.</p>
+            </div>
+
+            <div style="max-width: 850px; margin: 0 auto;">
+                <!-- FAQ Item 1 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">1. Is Kolkata safe for international solo travelers? <span>+</span></button>
+                    <div class="faq-body">Yes, Kolkata is recognized as one of India's safest metropolitan cities. With private local guidance, your logistical routes, transport loops, and neighborhood walks are fully optimized for security.</div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">2. What exact languages does Sam speak fluently? <span>+</span></button>
+                    <div class="faq-body">Sam speaks professional, fluent English along with Hindi and native Bengali, ensuring seamless translation across all local levels.</div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">3. How are culinary health and sanitation managed on Food Walks? <span>+</span></button>
+                    <div class="faq-body">We filter dining selections to highly vetted, deeply trusted heirloom establishments that maintain strict hygiene benchmarks, protecting your health completely.</div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">4. Can you provide dynamic support for business visitors? <span>+</span></button>
+                    <div class="faq-body">Yes. We regularly handle VIP scheduling, private vehicle rentals with drivers, tech hub connectivity, and secure corporate travel loops.</div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">5. Are customizable itineraries adaptive during the actual tour? <span>+</span></button>
+                    <div class="faq-body">Absolutely. The experience is fully elastic, allowing real-time shifts based on your preferences, energy levels, or changing local weather patterns.</div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">6. How far in advance should I secure my booking? <span>+</span></button>
+                    <div class="faq-body">We highly recommend placing bookings 2 to 4 weeks prior to arrival to guarantee optimal clearance for VIP transport allocations and local reservations.</div>
+                </div>
+                <!-- FAQ Item 7 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">7. What types of vehicles are deployed for luxury transfers? <span>+</span></button>
+                    <div class="faq-body">We coordinate premium, fully air-conditioned sedans and SUVs tailored to high international standards of cleanliness and safety.</div>
+                </div>
+                <!-- FAQ Item 8 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">8. What is the best time of year to visit Kolkata? <span>+</span></button>
+                    <div class="faq-body">The autumn and winter months between October and March offer exceptionally pleasant weather, perfect for open-air architectural tours and city exploration.</div>
+                </div>
+                <!-- FAQ Item 9 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">9. Do you support photography-focused field expeditions? <span>+</span></button>
+                    <div class="faq-body">Yes, we map out specialized routes for exact timing at key locations, ensuring excellent lighting conditions and clear sightlines at top heritage spots.</div>
+                </div>
+                <!-- FAQ Item 10 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">10. How do I handle tipping or local currency transactions? <span>+</span></button>
+                    <div class="faq-body">Sam provides clear guidance on standard local etiquette and assists with accessing verified international currency exchanges and digital payment portals.</div>
+                </div>
+                <!-- FAQ Item 11 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">11. Are entrance fees for monuments included in standard rates? <span>+</span></button>
+                    <div class="faq-body">Entrance parameters depend entirely on the package chosen. In our all-inclusive full-day exploration paths, all venue access parameters are completely covered.</div>
+                </div>
+                <!-- FAQ Item 12 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">12. Can you accommodate specific mobility requirements? <span>+</span></button>
+                    <div class="faq-body">Yes. We carefully structure alternative step-free entries, smooth vehicle proximity loops, and comfortable resting zones across our active exploration tracks.</div>
+                </div>
+                <!-- FAQ Item 13 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">13. What is the standard cancellation window? <span>+</span></button>
+                    <div class="faq-body">Full operational flexibility is extended for modifications or cancellations processed up to 48 hours before the scheduled time slot.</div>
+                </div>
+                <!-- FAQ Item 14 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">14. Do you support airport pickups for late-night arrivals? <span>+</span></button>
+                    <div class="faq-body">Yes, our VIP airport concierge operate 24/7, providing continuous coverage for smooth international flight connections at any hour.</div>
+                </div>
+                <!-- FAQ Item 15 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">15. How are emergency medical situations managed? <span>+</span></button>
+                    <div class="faq-body">We maintain immediate priority contact links with premium international private hospitals throughout the city to guarantee rapid care if needed.</div>
+                </div>
+                <!-- FAQ Item 16 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">16. Are child-friendly variations available? <span>+</span></button>
+                    <div class="faq-body">Yes, we adjust tracking speeds and include highly interactive cultural experiences to keep families fully engaged.</div>
+                </div>
+                <!-- FAQ Item 17 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">17. Can you help secure elite hotel and fine dining reservations? <span>+</span></button>
+                    <div class="faq-body">Yes, we leverage deep local relationships to secure premium placement at top-tier hotels and heritage dining venues.</div>
+                </div>
+                <!-- FAQ Item 18 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">18. What should I wear on outdoor walking tours? <span>+</span></button>
+                    <div class="faq-body">We recommend light, breathable fabrics and comfortable walking shoes. For visits to active religious spaces, simple modest attire is best.</div>
+                </div>
+                <!-- FAQ Item 19 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">19. Do your tours operate during local monsoon seasons? <span>+</span></button>
+                    <div class="faq-body">Yes, we adjust monsoon trips to focus on stunning indoor heritage spaces, private art galleries, and luxurious palace dining environments.</div>
+                </div>
+                <!-- FAQ Item 20 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">20. Why select a local friend format over corporate agencies? <span>+</span></button>
+                    <div class="faq-body">This arrangement completely bypasses rigid, cookie-cutter commercial itineraries, giving you an authentic, flexible, and reliable personal connection inside the real Kolkata.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleFaq(btn) {
+            const body = btn.nextElementSibling;
+            body.classList.toggle('active');
+            btn.querySelector('span').innerText = body.classList.contains('active') ? '−' : '+';
+        }
+
+        function executeDirectContact(e) {
+            e.preventDefault();
+            const n = document.getElementById('c_name').value;
+            const m = document.getElementById('c_msg').value;
+            const link = `https://api.whatsapp.com/send?phone=916204576957&text=Name:%20${encodeURIComponent(n)}%20-%20Message:%20${encodeURIComponent(m)}`;
+            window.open(link, '_blank');
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
