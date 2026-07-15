@@ -624,3 +624,68 @@
                 alert('Secure Validation Signal Triggered via ' + method + '.\nOur central reservation desk is syncing this authorization loop. Please wait for official clearance invoice.');
             }
         </script>
+        <!-- NEW ADVANCED UPGRADE: Interactive Luxury Tour Estimator -->
+        <section class="estimator-section">
+            <div class="container">
+                <div style="text-align: center;">
+                    <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); font-weight: 600;">Real-Time Curation Pricing</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 10px;">Bespoke Cost Estimator</h2>
+                </div>
+
+                <div class="estimator-card">
+                    <!-- Input 1: Vehicle Select -->
+                    <div class="form-field-group">
+                        <label>Select VIP Fleet Vehicle</label>
+                        <select id="calcVehicle" onchange="calculateLiveEstimate()">
+                            <option value="4500">Mahindra Scorpio-N (Classic Luxury) - ₹4,500/day</option>
+                            <option value="6500">Mahindra Thar ROXX (Adventure Premium) - ₹6,600/day</option>
+                            <option value="25000">Mercedes-Benz G-Wagon (Ultra Elite) - ₹25,000/day</option>
+                        </select>
+                    </div>
+
+                    <!-- Input 2: Curation Layer -->
+                    <div class="form-field-group">
+                        <label>Select Experience Curation</label>
+                        <select id="calcExperience" onchange="calculateLiveEstimate()">
+                            <option value="2000">Standard Heritage Guided Matrix (+₹2,000/day)</option>
+                            <option value="4000">Premium Gastronomy & Vetted Food Walk (+₹4,000/day)</option>
+                            <option value="12000">5-Star VIP Stay & Airport Concierge Hub (+₹12,000/day)</option>
+                        </select>
+                    </div>
+
+                    <!-- Input 3: Days Slider -->
+                    <div class="form-field-group">
+                        <label style="display:flex; justify-content:space-between;">
+                            <span>Duration of Stay</span>
+                            <span id="daysDisplay" style="color:var(--accent); font-weight:600;">1 Day</span>
+                        </label>
+                        <input type="range" id="calcDays" min="1" max="10" value="1" step="1" oninput="updateDaysText(this.value); calculateLiveEstimate();" style="accent-color: var(--accent);">
+                    </div>
+
+                    <!-- Real-Time Output Display Node -->
+                    <div class="live-price-display">
+                        <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); font-weight:600;">Estimated Investment Matrix</span>
+                        <div class="price-value" id="liveEstimatedPrice">₹6,500</div>
+                        <p style="font-size:0.75rem; color:var(--text-muted); margin:10px 0 0 0;">*Estimates subject to active scheduling availability parameters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Live Budget Multiplier Calculations Engine
+            function updateDaysText(val) {
+                document.getElementById('daysDisplay').innerText = val + (val == 1 ? ' Day' : ' Days');
+            }
+
+            function calculateLiveEstimate() {
+                const vehicleCost = parseInt(document.getElementById('calcVehicle').value);
+                const experienceCost = parseInt(document.getElementById('calcExperience').value);
+                const totalDays = parseInt(document.getElementById('calcDays').value);
+
+                const finalSum = (vehicleCost + experienceCost) * totalDays;
+                
+                // Format with Indian currency layout style
+                document.getElementById('liveEstimatedPrice').innerText = '₹' + finalSum.toLocaleString('en-IN');
+            }
+        </script>
