@@ -374,3 +374,51 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+/* ==========================================================================
+   TOURIST ELITE FOOD & SAFETY MATRIX
+   ========================================================================== */
+.tourist-premium-vault {
+    padding: 80px 0;
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+}
+
+.vault-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .vault-grid { grid-template-columns: 1fr; }
+}
+
+.vault-box {
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 20px var(--glass-shadow);
+}
+
+.food-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.food-item-row:last-child { border-bottom: none; }
+
+.emergency-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255, 59, 48, 0.1);
+    color: #FF3B30;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
