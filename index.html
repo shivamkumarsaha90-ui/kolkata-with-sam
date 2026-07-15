@@ -472,3 +472,81 @@
                 </div>
             </div>
         </section>
+        <!-- NEW ADVANCED UPGRADE: Luxury Receipt Generator Widget -->
+        <section class="booking-widget-section">
+            <div class="container">
+                <div style="text-align: center;">
+                    <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); font-weight: 600;">Instant Digital Interlock</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 10px;">Generate Luxury Travel Pass</h2>
+                </div>
+
+                <div class="booking-form-box">
+                    <div class="form-field-group">
+                        <label>Guest Full Name</label>
+                        <input type="text" id="passGuestName" placeholder="e.g. Mark Jenkins" required>
+                    </div>
+                    <div class="form-field-group">
+                        <label>Preferred Luxury Package</label>
+                        <select id="passPackageSelection">
+                            <option value="VIP Tarmac + Luxury Stay Corridor">VIP Tarmac + Luxury Stay Corridor</option>
+                            <option value="Private Heritage Mansion Curation">Private Heritage Mansion Curation</option>
+                            <option value="Gastronomy & Local Food Walk Node">Gastronomy & Local Food Walk Node</option>
+                        </select>
+                    </div>
+                    <div class="form-field-group">
+                        <label>Execution Target Date</label>
+                        <input type="date" id="passTargetDate" required>
+                    </div>
+                    <button onclick="generateLuxuryReceipt()" style="width:100%; padding:15px; background:var(--accent); color:#ffffff; border:none; border-radius:var(--radius-sm); font-weight:600; cursor:pointer; letter-spacing:1px; text-transform:uppercase; margin-top:10px;">Generate My Luxury Pass</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Overlay Component Placeholder -->
+        <div id="receiptOverlayContainer" style="display:none;"></div>
+
+        <script>
+            // Advanced Travel Pass Engine Initialization
+            function generateLuxuryReceipt() {
+                const guestName = document.getElementById('passGuestName').value.trim();
+                const selectedPkg = document.getElementById('passPackageSelection').value;
+                const targetDate = document.getElementById('passTargetDate').value;
+
+                if(!guestName || !targetDate) {
+                    alert('Please fill out all custom fields to generate verification token.');
+                    return;
+                }
+
+                const uniqueToken = 'KWS-' + Math.floor(100000 + Math.random() * 900000);
+                
+                const receiptHTML = `
+                    <div class="receipt-modal-overlay" id="receiptSystemOverlay">
+                        <div class="luxury-receipt-card">
+                            <div class="receipt-header-node">
+                                <h3 style="margin:0; font-size:1.4rem; letter-spacing:1px; color:#1c1c1e;">KOLKATA WITH SAM</h3>
+                                <span style="font-size:0.7rem; color:#8e8e93; text-transform:uppercase;">Official Luxury Travel Pass</span>
+                            </div>
+                            <div class="receipt-row"><strong>Verification Token:</strong> <span style="font-family:monospace; font-weight:600; color:#BF9443;">\${uniqueToken}</span></div>
+                            <div class="receipt-row"><strong>Guest Name:</strong> <span>\${guestName}</span></div>
+                            <div class="receipt-row"><strong>Selected Core:</strong> <span>\${selectedPkg}</span></div>
+                            <div class="receipt-row"><strong>Schedule Date:</strong> <span>\${targetDate}</span></div>
+                            <div class="receipt-row" style="border-top:1px solid #e5e5ea; padding-top:12px; margin-top:12px;"><strong>Status:</strong> <span style="color:#34c759; font-weight:600;">✓ Voucher Generated</span></div>
+                            
+                            <p style="font-size:0.75rem; color:#8e8e93; text-align:center; margin:20px 0 0 0; line-height:1.4;">Please take a screenshot of this digital pass and share it over our direct WhatsApp clearance channel for rapid schedule booking verification.</p>
+                            
+                            <button onclick="closeReceiptOverlay()" style="width:100%; margin-top:20px; padding:12px; background:#1c1c1e; color:#ffffff; border:none; border-radius:6px; cursor:pointer; font-weight:600;">Close Manifest</button>
+                        </div>
+                    </div>
+                `;
+
+                const container = document.getElementById('receiptOverlayContainer');
+                container.innerHTML = receiptHTML;
+                container.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeReceiptOverlay() {
+                document.getElementById('receiptOverlayContainer').style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        </script>
