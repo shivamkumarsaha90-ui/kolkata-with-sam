@@ -312,3 +312,65 @@
 @media (max-width: 768px) {
     .footer-grid { grid-template-columns: 1fr; gap: 30px; }
 }
+/* ==========================================================================
+   PREMIUM LUXURY TESTIMONIALS GRID
+   ========================================================================== */
+.testimonials-section {
+    padding: 80px 0;
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 20px var(--glass-shadow);
+    transition: var(--transition-smooth);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.client-rating {
+    color: #FFCC00;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.client-meta h5 {
+    font-family: var(--font-serif);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.client-meta span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
