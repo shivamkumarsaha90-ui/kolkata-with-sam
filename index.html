@@ -351,3 +351,53 @@
             </div>
         </section>
 
+        <!-- NEW FEATURE: Premium FAQ Accordion Matrix -->
+        <section class="faq-section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); font-weight: 600;">Information Transparency</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 10px;">Frequently Asked Matrices</h2>
+                </div>
+
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">Are these tours completely private and customized?</button>
+                        <div class="faq-content">
+                            <p>Yes, absolutely. Every itinerary is fully bespoke and curated exclusively for you or your private group. We don't mix strangers into your luxury experience layout.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">How do we manage airport VIP clearance protocols?</button>
+                        <div class="faq-content">
+                            <p>We orchestrate direct fast-track coordination upon arrival, assisting with luggage reconciliation, priority terminal exits, and high-end private vehicle transfers smoothly.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">Is the curated food walk safe for international guests?</button>
+                        <div class="faq-content">
+                            <p>Hygiene is our highest priority node. We only select verified historical eateries and premium culinary spots that adhere strictly to clean and vetted preparation standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Premium FAQ Accordion Toggle Engine
+            function toggleFaq(element) {
+                const item = element.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all other open nodes for strict clean alignment
+                document.querySelectorAll('.faq-item').forEach(node => node.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            }
+        </script>
