@@ -422,3 +422,48 @@
     border-radius: 4px;
     text-transform: uppercase;
 }
+/* ==========================================================================
+   PREMIUM LUXURY ABOUT SECTION LAYOUT
+   ========================================================================== */
+.about-hero-wrapper {
+    padding: 100px 0 60px 0;
+    background: var(--bg-main);
+    text-align: center;
+}
+
+.about-matrix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 60px 0;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .about-matrix-grid { grid-template-columns: 1fr; gap: 30px; }
+}
+
+.story-card-premium {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 20px var(--glass-shadow);
+}
+
+.milestone-badge-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.milestone-tag {
+    padding: 8px 16px;
+    background: rgba(var(--accent-rgb), 0.1);
+    border: 1px solid var(--accent);
+    color: var(--text-main);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
